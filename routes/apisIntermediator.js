@@ -51,11 +51,15 @@ router.post('/*', function (request, response) {
 		}	
 		var request = require('request');
 
+		//uri: 'http://189.112.232.33:8082/easycollectorwshomologacao/easycollectorWs.asmx/' + method,
+			// uri: 'http://easycollector.wedoo.com.br:8088/easycollectorws.asmx/' + method,
+
 		request({
 			headers: {
 			  'Content-Length': contentLength,
 			  'Content-Type': 'application/x-www-form-urlencoded'
 			},
+			// uri: 'http://easycollector.wedoo.com.br:8088/easycollectorws.asmx/' + method,
 			uri: 'http://189.112.232.33:8082/easycollectorwshomologacao/easycollectorWs.asmx/' + method,
 			body: formData,
 			method: 'POST'
