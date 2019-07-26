@@ -15,6 +15,6 @@ app.use(function(req, res) {
 });
 
 //Server listening
-app.listen(80,function () {
-  console.log('Server started on portaaa 80...');
+app.listen(8080,function () {
+  console.log('Server started on portaaa 8080...');
 });
